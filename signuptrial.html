@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup</title>
+	<link rel="stylesheet" type="text/css" href="styletrial/signuptrial.css">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		body{
+			background:url(https://integralyonetim.com/wp-content/uploads/2019/07/gecici-yonetim-nedir-nasil-kurulur-2.jpg);
+			background-size: cover;;
+		}
+		.container{
+			display: flex;
+			flex-direction:column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		.signupform{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.signupform input[type="text"], .signupform input[type="password"], .signupform input[type="email"]{
+		background:none;
+			border:0;
+			text-align: center;
+			width: 300px;
+			padding:10px;
+			margin:30px;
+			border:solid #009999 2px;
+			border-radius: 25px;
+			outline: none;
+		}
+		.signupform input[type="submit"]{
+			width:150px;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 30px;
+		}
+		.first img{
+			height:30px;
+			width:30px;
+		}
+		.second img{
+			height:30px;
+			width: 30px;
+		}
+		.third img{
+			height: 30px;
+			width: 30px;
+		}
+		.first, .second, .third{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.signupform input[type="submit"]{
+			width:150px;
+			padding:10px;
+			border-radius: 10px;
+			color:white;
+			background:none;
+			outline:none;
+			text-shadow: 2px 2px 2px red;
+			cursor: pointer;
+		}
+		.image img{
+			height:120px;
+			width:120px;
+		}
+		.heading{
+			font-family: 'Holtwood One SC', serif;
+			font-size: 20px;
+		}
+
+		.signupform input[type="text"]:focus, .signupform input[type="password"]:focus, .signupform input[type="email"]{
+			border:solid grey 4px;
+		}
+		@media screen and (max-width: 540px){
+			.image img{
+				width:80px;
+				height:80px;
+			}
+			.signupform input[type="text"], .signupform input[type="password"], .signupform input[type="email"]{
+				width:230px;
+				height:15px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="image">
+				<img src="https://img.icons8.com/ios-glyphs/2x/login-as-user.png">
+		</div>
+		<div class="heading">
+			<p class="headi">USER DETAILS</p>
+		</div>
+		<div class="signupform">
+			
+			<form action="" class="signupform">
+				<div class="first">
+					<img src="images/login.png">
+					<input type="text" name="" placeholder="NEW USERNAME">
+				</div>
+				<div class="second">
+					<img src="images/password.png">
+					<input type="password" name="" placeholder="NEW PASSWORD">
+				</div>
+				<div class="third">
+					<img src="images/email.png">
+					<input type="email" name="" placeholder="ENTER YOUR EMAIL">
+				</div>
+					<input type="submit" name="" value="SUBMIT">
+			</form>
+
+		</div>
+	</div>
+
+</body>
+</html>
